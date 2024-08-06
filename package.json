@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
-    "build": "webpack -w"
+    "start": "live-server"
   },
   "keywords": [],
   "author": "",
