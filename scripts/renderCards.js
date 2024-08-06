@@ -1,12 +1,9 @@
 const movieContainer = document.getElementById('movie-cards-container');
 
 const renderCards = (data) => {
-    const row = document.createElement('div');
-    row.className = 'row';
-
     data.forEach((movie) => {
         const col = document.createElement('div');
-        col.className = 'col-xl-3 mb-2';
+        col.className = 'col-md-3 mb-2';
 
         const card = document.createElement('div');
         card.className = 'card h-100 shadow-sm bg-dark text-light mt-2'; 
@@ -77,10 +74,8 @@ const renderCards = (data) => {
         cardBody.appendChild(starContainer);
 
         col.appendChild(card);
-        row.appendChild(col);
+        movieContainer.appendChild(col);
     });
-
-    movieContainer.appendChild(row);
 }
 
 module.exports = {
