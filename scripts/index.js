@@ -1,6 +1,6 @@
 const { renderCards } = require("./renderCards.js");
 const axios = require("axios");
-const url = "https://api-pelis-seven.vercel.app/movies";
+const url = "https://api-pelis-ten.vercel.app/movies";
 const { createMovie, clearInputs } = require("./addMovies.js")
 const cardsContainer = document.querySelector("#movie-cards-container")
 const movieForm = document.querySelector("#movie-form")

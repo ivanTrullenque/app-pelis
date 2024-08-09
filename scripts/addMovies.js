@@ -48,7 +48,7 @@ const createMovie = window.submitForm = async (event) => {
     };
 
     try {
-        const response = await axios.post('https://api-pelis-seven.vercel.app/movies', objMovie);
+        const response = await axios.post('https://api-pelis-ten.vercel.app/movies', objMovie);
         if (response.data.success) {
             document.querySelector('#movie-form').reset();
             alert(response.data.message || 'Película creada exitosamente');
